@@ -1,0 +1,45 @@
+#optics .brand {
+  min-height: 400px;
+}
+
+#needless {
+  flex-direction: row;
+}
+
+#optics .brand {
+  background-color: #00000080;
+  width: 100%;
+  padding: 3rem;
+}
+
+.display {
+  flex-direction: column;
+  padding: 5rem 3rem !important;
+}
+
+#needless .logo {
+  align-items: center;
+  height: 100%;
+  margin-right: 1rem;
+  display: flex;
+  margin-bottom: 0 !important;
+}
+
+#needless .brand {
+  margin-bottom: 0;
+}
+
+.imgs {
+  flex-direction: row;
+}
+
+.imgs img {
+  width: 50% !important;
+}
+
+.imgs img + img {
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+/*# sourceMappingURL=index.58cc64e5.css.map */

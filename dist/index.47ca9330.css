@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img.bg {
+  position: absolute;
+  top: 40vh;
+  right: 10px;
+}
+
+:root {
+  --header-color: white;
+  --header-bg: transparent;
+  --body-color: white;
+  --body-bg: #000;
+  --primary-color: #5c05ff;
+  --primary-color-hover: #370791;
+  --secondary-color: orange;
+  --secondary-color-hover: #ef7300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  font-family: Raleway, sans-serif;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  color: #111;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: .25rem;
+  padding: .5rem 1.5rem;
+  font-size: .9rem;
+  transition-duration: .2s;
+  display: inline-block;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+.btn.secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: var(--secondary-color-hover);
+  color: #fff;
+}
+
+.btn.primary {
+  filter: progid:DXImageTransform. Microsoft. gradient(startColorstr= "#0063FF", endColorstr= "#BF00FF", GradientType= 1);
+  color: #fff;
+  background: linear-gradient(90deg, #7106ec 0%, #db00bd 63%, #8400ff 100%);
+  border-radius: 100rem;
+  transition-duration: .5s;
+}
+
+.btn.primary:hover {
+  background: -moz-linear-gradient(0% 50% 0deg, #bf00ff 0%, #0063ff 100%);
+  background: -webkit-linear-gradient(0deg, #bf00ff 0%, #0063ff 100%);
+  background: -o-linear-gradient(90deg, #bf00ff 0%, #0063ff 100%);
+  background: -ms-linear-gradient(90deg, #bf00ff 0%, #0063ff 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#BF00FF', endColorstr='#0063FF' ,GradientType=0)";
+  filter: progid:DXImageTransform. Microsoft. gradient(startColorstr= "#BF00FF", endColorstr= "#0063FF", GradientType= 1);
+  opacity: .9;
+  color: #fff;
+  background: linear-gradient(90deg, #bf00ff 0%, #0063ff 100%);
+  border-radius: 21px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.spacer {
+  height: 2.5rem;
+}
+
+.spacer.half {
+  height: 1.25rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 2.5em;
+}
+
+.blog {
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.blog a {
+  text-decoration: underline;
+}
+
+.display {
+  border-radius: 1.5rem;
+  place-content: center;
+  margin-bottom: 1rem;
+  padding: 8rem;
+  display: flex;
+}
+
+.anim > .show {
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.anim > * {
+  opacity: 0;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.anim.shrink > * {
+  opacity: 1;
+}
+
+.anim.fadeintoleft > .show {
+  animation-name: fadeintoleft;
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.anim.shrink > .show {
+  animation-name: shrink;
+}
+
+@keyframes fadeintoright {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.anim.fadeintoright > .show {
+  animation-name: fadeintoright;
+}
+
+@keyframes fadeintoleft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.anim.fadein > .show {
+  animation-name: fadein;
+}
+
+footer.main {
+  background-color: #111;
+  padding: 2rem 1rem;
+  font-size: .75rem;
+}
+
+/*# sourceMappingURL=index.47ca9330.css.map */
