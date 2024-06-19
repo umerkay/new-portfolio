@@ -171,6 +171,18 @@ path:first-child {
   transition-delay: 0s;
 }
 
+#quicklinks .links .link.disabled {
+  color: gray;
+  cursor: default;
+}
+
+#quicklinks .links .link.disabled:hover {
+  text-align: center;
+  font-size: 1.3rem;
+  transition-duration: .4s;
+  transition-delay: .5s;
+}
+
 #drawboard {
   background: linear-gradient(95.65deg, #0077bf, #0880c5 20.36%, #1c9ad6 54.11%, #1e9cd7 56.74%, #0075be 86.52%, #007e97 99.44%);
 }
@@ -491,6 +503,138 @@ span.bold {
 
 #evolution h1, #evolution h2 {
   font-weight: bold;
+}
+
+#sidescroller {
+  background: url("sidescroller.7ebe3d08.png") center / cover no-repeat;
+  border: 5px solid #efc323;
+  border-radius: 30px;
+  justify-content: start;
+  padding: 5rem;
+  position: relative;
+  box-shadow: 0 4px #a58718;
+}
+
+#sidescroller .brand {
+  width: 100%;
+  display: flex;
+}
+
+#sidescroller .img {
+  opacity: .9;
+  width: 300px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+#sidescroller .title {
+  margin-bottom: .25rem;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+#sidescroller .sub {
+  margin-bottom: .5rem;
+  font-weight: 300;
+}
+
+#sidescroller .info:before {
+  content: "*";
+}
+
+#sidescroller .info {
+  background-color: #141414e6;
+  border-radius: .5rem;
+  width: 50%;
+  padding: 1rem;
+  font-size: .7rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.data {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-width: 100%;
+  display: flex;
+  overflow-y: auto;
+}
+
+.dataC {
+  background-color: #000;
+  border: 5px solid #efc323;
+  border-radius: 15px;
+  padding: 1rem;
+  font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+  box-shadow: 0 4px #a58718;
+}
+
+.data .score {
+  grid-template-columns: 25px 125px 50px;
+  display: grid;
+}
+
+.data > :first-child {
+  color: gold;
+}
+
+.data > :nth-child(2) {
+  color: silver;
+}
+
+.data > :nth-child(3) {
+  color: #d64e18;
+  margin-bottom: 1rem;
+}
+
+span.time {
+  text-align: right;
+}
+
+#coursework {
+  background: url("needlessbg.05597eba.jpg");
+  padding: 5rem;
+}
+
+#coursework .brand {
+  align-items: center;
+  display: flex;
+}
+
+#coursework .imgs img {
+  width: 400px;
+  margin-right: 2rem;
+}
+
+#coursework .sub {
+  color: #000;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+#coursework .spacer {
+  height: 0;
+}
+
+#coursework .btn {
+  color: #fff;
+  background-color: #7106ec;
+}
+
+#coursework .title {
+  margin-bottom: .5rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+#coursework .sub {
+  margin-bottom: .5rem;
+}
+
+#coursework .info {
+  font-size: .75rem;
 }
 
 * {

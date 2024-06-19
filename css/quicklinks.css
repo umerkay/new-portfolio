@@ -43,3 +43,15 @@
     transition-delay: 0ms;
 
 }
+
+#quicklinks .links .link.disabled {
+    color: grey;
+    cursor: default;
+}
+
+#quicklinks .links .link.disabled:hover {
+    transition-duration: 400ms;
+    transition-delay: 500ms;
+    text-align: center;
+    font-size: 1.3rem;
+}

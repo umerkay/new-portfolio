@@ -1,6 +1,8 @@
 // src/components/Leaderboard.js
 import React, { useState, useEffect } from 'react';
-import { db } from '../firebase';
+import db from '../firebase';
+import '../css/sidescroller.css';
+import { collection, getDocs, orderBy, limit, query } from 'firebase/firestore';
 
 const SideScroller = () => {
   const [loadingLB, setLoadingLB] = useState(true);
@@ -9,13 +11,17 @@ const SideScroller = () => {
 
   const updateData = async () => {
     setLoadingLB(true);
-    const querySnapshot = await db
-      .collection('bestscores')
-      .doc(`level${level}`)
-      .collection('scores')
-      .orderBy('time')
-      .limit(5)
-      .get();
+    // const querySnapshot = await db
+    //   .collection('bestscores')
+    //   .doc(`level${level}`)
+    //   .collection('scores')
+    //   .orderBy('time')
+    //   .limit(5)
+    //   .get();
+
+    const scoresRef = collection(db, 'bestscores', `level${level}`, 'scores');
+    const querySnapshot = await getDocs(query(scoresRef, orderBy('time'), limit(5)));
+
 
     const scores = [];
     querySnapshot.forEach(doc => {

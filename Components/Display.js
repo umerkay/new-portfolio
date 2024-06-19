@@ -1,7 +1,7 @@
 
-function Display({ title, images, links, logo, description, info, titleStyle, logoAlt, id, mirror=false }) {
+function Display({ title, images, links, logo, description, info, titleStyle, logoAlt, id, mirror=false, style={} }) {
 	return (
-		<div className="display" id={id}>
+		<div className="display" id={id} style={style}>
 			<div className="anim fadein" style={{order: mirror ? 2 : 0}}>
 				<div className="imgs">
 					{images && images.map((image, index) => (
