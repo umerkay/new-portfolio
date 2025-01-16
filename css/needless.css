@@ -8,9 +8,10 @@
     align-items: center;
 }
 
-#needless .logo img {
+#needless .imgs img {
     width: 250px;
     margin-right: 2rem;
+    border-radius: 1rem;
 }
 
 #needless .title {

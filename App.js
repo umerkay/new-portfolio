@@ -7,6 +7,7 @@ import "./css/mobile.css";
 import "./css/tablet.css";
 import HomePage from './Pages/HomePage';
 import Footer from './Components/Footer';
+import About from './Pages/About';
 
 export function App() {
 
@@ -21,6 +22,7 @@ export function App() {
             <Navigation links={links} />
             <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<About />} />
             </Routes>
             <Footer></Footer>
         </Router>

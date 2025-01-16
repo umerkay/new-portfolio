@@ -187,6 +187,11 @@ ul {
   border-radius: 1.5rem;
   /* margin: 3rem 0rem; */
 }
+
+.display h2.sub2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 /* 
 .display:nth-child(2n) {
   margin-left: 3rem;

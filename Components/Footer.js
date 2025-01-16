@@ -4,7 +4,9 @@ export default function Footer() {
     return (
         <footer class="main">
             <div class="container">
-                ©️ umerkk164 2024 All content here in is property of the entity
+                ©️ umerkk164 {
+                    new Date().getFullYear()
+                } All content here in is property of the entity
                 represented by umerkk164. This website is for demonstration of work done
                 by said entity and shall be used as such. Work is linked to third
                 parties for the purposes of demonstration and said entity will not be

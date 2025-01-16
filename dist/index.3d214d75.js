@@ -27166,6 +27166,8 @@ var _homePage = require("./Pages/HomePage");
 var _homePageDefault = parcelHelpers.interopDefault(_homePage);
 var _footer = require("./Components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _about = require("./Pages/About");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
 function App() {
     const links = [
         {
@@ -27193,32 +27195,42 @@ function App() {
                 links: links
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 23,
-                    columnNumber: 17
-                }, this)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 24,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/about",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 25,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 25,
+                lineNumber: 27,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 9
     }, this);
 }
@@ -27231,7 +27243,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe","./Components/Navigation":"8Trdi","./Pages/HomePage":"e7S6v","./css/main.css":"fvj34","./Components/Footer":"do5GF","./css/cover.css":"6bHCS","./css/mobile.css":"4Fr6P","./css/tablet.css":"jikrs"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe","./Components/Navigation":"8Trdi","./Pages/HomePage":"e7S6v","./css/main.css":"fvj34","./Components/Footer":"do5GF","./css/cover.css":"6bHCS","./css/mobile.css":"4Fr6P","./css/tablet.css":"jikrs","./Pages/About":"dlHWA"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -34184,59 +34196,155 @@ var _intro = require("../Components/Intro");
 var _introDefault = parcelHelpers.interopDefault(_intro);
 var _siteMap = require("../Components/SiteMap");
 var _siteMapDefault = parcelHelpers.interopDefault(_siteMap);
+var _reactRouterDom = require("react-router-dom");
+var _webDev = require("../Pages/WebDev");
+var _webDevDefault = parcelHelpers.interopDefault(_webDev);
+var _mathNPhysics = require("../Pages/MathNPhysics");
+var _mathNPhysicsDefault = parcelHelpers.interopDefault(_mathNPhysics);
+var _games = require("../Pages/Games");
+var _gamesDefault = parcelHelpers.interopDefault(_games);
+var _coursework = require("../Pages/Coursework");
+var _courseworkDefault = parcelHelpers.interopDefault(_coursework);
+var _deepLearning = require("./DeepLearning");
+var _deepLearningDefault = parcelHelpers.interopDefault(_deepLearning);
 var _s = $RefreshSig$();
+const links = [
+    {
+        text: "Web Dev",
+        value: "web",
+        component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _webDevDefault.default), {}, void 0, false, {
+            fileName: "Pages/HomePage.js",
+            lineNumber: 13,
+            columnNumber: 47
+        }, undefined)
+    },
+    {
+        text: "Math & Physics",
+        value: "mathnphy",
+        component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mathNPhysicsDefault.default), {}, void 0, false, {
+            fileName: "Pages/HomePage.js",
+            lineNumber: 14,
+            columnNumber: 59
+        }, undefined)
+    },
+    {
+        text: "Games",
+        value: "play",
+        component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _gamesDefault.default), {}, void 0, false, {
+            fileName: "Pages/HomePage.js",
+            lineNumber: 15,
+            columnNumber: 46
+        }, undefined)
+    },
+    {
+        text: "Creative Design",
+        value: "design",
+        href: "https://umerkay.github.io/DesignPortfolio.pdf"
+    },
+    {
+        text: "Coursework",
+        value: "coursework",
+        component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _courseworkDefault.default), {}, void 0, false, {
+            fileName: "Pages/HomePage.js",
+            lineNumber: 17,
+            columnNumber: 57
+        }, undefined)
+    },
+    {
+        text: "Deep Learning",
+        value: "DL",
+        component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deepLearningDefault.default), {}, void 0, false, {
+            fileName: "Pages/HomePage.js",
+            lineNumber: 18,
+            columnNumber: 52
+        }, undefined)
+    },
+    {
+        text: "FitReflect",
+        value: "fitreflect",
+        href: "https://fitreflect.com"
+    }
+].map((link)=>({
+        ...link,
+        href: link.href || `#${link.value}`
+    }));
 function HomePage() {
     _s();
-    const [selectedLink, setSelectedLink] = (0, _react.useState)("");
-    const handleLinkClick = (value)=>{
-        setSelectedLink(value);
-    };
+    const { hash } = (0, _reactRouterDom.useLocation)();
+    const [selectedLink, setSelectedLink] = (0, _react.useState)(null);
+    // Create a ref for each section
+    const sectionRefs = (0, _react.useRef)(links.reduce((acc, link)=>{
+        acc[link.value] = /*#__PURE__*/ (0, _reactDefault.default).createRef();
+        return acc;
+    }, {}));
+    (0, _react.useEffect)(()=>{
+        if (hash) {
+            const link = links.find((link)=>link.value === hash.slice(1));
+            setSelectedLink(link);
+        }
+    }, [
+        hash
+    ]);
+    // Scroll to the selected section when it's set
+    (0, _react.useEffect)(()=>{
+        if (selectedLink && sectionRefs.current[selectedLink.value]) sectionRefs.current[selectedLink.value].current.scrollIntoView({
+            behavior: "smooth"
+        });
+    }, [
+        selectedLink
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signatureDefault.default), {}, void 0, false, {
                 fileName: "Pages/HomePage.js",
-                lineNumber: 16,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _introDefault.default), {}, void 0, false, {
                 fileName: "Pages/HomePage.js",
-                lineNumber: 17,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "spacer"
+                id: "lll",
+                className: "spacer"
             }, void 0, false, {
                 fileName: "Pages/HomePage.js",
-                lineNumber: 18,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _siteMapDefault.default), {
-                selectedLink: selectedLink,
-                handleLinkClick: handleLinkClick
+                links: links,
+                selectedLink: selectedLink
             }, void 0, false, {
                 fileName: "Pages/HomePage.js",
-                lineNumber: 19,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "spacer"
+            selectedLink?.component && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    paddingTop: "5rem"
+                },
+                ref: sectionRefs.current[selectedLink.value],
+                children: selectedLink.component
             }, void 0, false, {
                 fileName: "Pages/HomePage.js",
-                lineNumber: 20,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                children: selectedLink.component || selectedLink.value
-            }, void 0, false)
+                lineNumber: 54,
+                columnNumber: 9
+            }, this)
         ]
     }, void 0, true, {
         fileName: "Pages/HomePage.js",
-        lineNumber: 15,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }
-_s(HomePage, "6CcOZNKvy4IDmpPJr6hrhZ+jKoM=");
+_s(HomePage, "buZjDYEMF+LeFn+P5K9YppOIM/g=", false, function() {
+    return [
+        (0, _reactRouterDom.useLocation)
+    ];
+});
 _c = HomePage;
 var _c;
 $RefreshReg$(_c, "HomePage");
@@ -34246,7 +34354,7 @@ $RefreshReg$(_c, "HomePage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Components/Signature":"ilS0n","../Components/Intro":"11W5I","../Components/SiteMap":"2IfKS"}],"ilS0n":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Components/Signature":"ilS0n","../Components/Intro":"11W5I","../Components/SiteMap":"2IfKS","react-router-dom":"9xmpe","../Pages/WebDev":"kjuoh","../Pages/MathNPhysics":"cJ0Lp","../Pages/Games":"4IQDP","../Pages/Coursework":"0ktz7","./DeepLearning":"hBbaz"}],"ilS0n":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5e9e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34271,37 +34379,62 @@ function Signature() {
                     viewBox: "0 0 450 360",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("linearGradient", {
-                                id: "gradient1",
-                                x1: "0%",
-                                y1: "0%",
-                                x2: "100%",
-                                y2: "100%",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
-                                        offset: "0%",
-                                        style: {
-                                            stopColor: "#10adf3",
-                                            stopOpacity: 1
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "Components/Signature.js",
-                                        lineNumber: 12,
-                                        columnNumber: 9
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
-                                        offset: "100%",
-                                        style: {
-                                            stopColor: "#005d99",
-                                            stopOpacity: 1
-                                        }
-                                    }, void 0, false, {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                width: "0",
+                                height: "0",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("linearGradient", {
+                                        id: "gradient1",
+                                        x1: "0%",
+                                        y1: "0%",
+                                        x2: "100%",
+                                        y2: "100%",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
+                                                offset: "20%",
+                                                style: {
+                                                    stopColor: "#ea4646",
+                                                    stopOpacity: 1
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "Components/Signature.js",
+                                                lineNumber: 16,
+                                                columnNumber: 11
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
+                                                offset: "44%",
+                                                style: {
+                                                    stopColor: "#498ff7",
+                                                    stopOpacity: 1
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "Components/Signature.js",
+                                                lineNumber: 19,
+                                                columnNumber: 11
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
+                                                offset: "100%",
+                                                style: {
+                                                    stopColor: "#ffffff",
+                                                    stopOpacity: 1
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "Components/Signature.js",
+                                                lineNumber: 23,
+                                                columnNumber: 11
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "Components/Signature.js",
                                         lineNumber: 13,
-                                        columnNumber: 9
+                                        columnNumber: 10
                                     }, this)
-                                ]
-                            }, void 0, true, {
+                                }, void 0, false, {
+                                    fileName: "Components/Signature.js",
+                                    lineNumber: 12,
+                                    columnNumber: 9
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "Components/Signature.js",
                                 lineNumber: 11,
                                 columnNumber: 8
@@ -34319,50 +34452,50 @@ function Signature() {
                                 "data-name": "Layer 1",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                        class: "cls-1",
+                                        className: "cls-1",
                                         d: "M218.89,389.45C215.74,343,206,294.66,188,248.18c-3.83-9.86-9.57-18.92-13-29-1.74-5.12-1.43-9.63,1.6-10.32,4.46-1,6.36,2.75,8.05,6,6.35,12.14,12.47,24.37,17,37.36a68.74,68.74,0,0,0,8.87,16.52,522.78,522.78,0,0,0,40.77,52.18,56.48,56.48,0,0,0,15.52,12.39c1.79,1,2.67.68,3.54-1.14a23.1,23.1,0,0,0,2.16-9.22c.44-10.5.85-21,1.35-31.51a19.59,19.59,0,0,1,.93-5.38c1.12-3.28,3.14-4.81,7-4.11,20.87,3.76,41.58,8.43,62.82,9.88,19.74,1.34,38.21-3.82,56.46-10.39,2-.72,2-1.66.67-3.15-28.92-33.26-52.29-70.41-75.3-107.8-9.16-14.88-16.83-30.56-24.33-46.32a13.13,13.13,0,0,1-.82-2.16c-.77-2.75-.43-5.76,2-7,2.22-1.14,4,1.5,5,3.25,5,8.48,9.55,17.18,14.53,25.65,20.76,35.34,41.52,70.68,65.15,104.23a316.92,316.92,0,0,0,21.7,27.09c1.38,1.56,2.46,1.77,4.4,1,18.26-7.55,36.18-16,55.29-21.27,9.93-2.74,20-4.15,30.34-2.7,20.69,2.9,30.11,24.18,18.18,41.41-10.36,15-25.54,21-43,21.57-21.72.67-40.43-7.45-56.23-21.93-6-5.52-10.83-7.11-19-3.55-22.46,9.78-46.29,10-70.24,6.81a375,375,0,0,1-45-9.25c-3.08-.8-3.78.17-4.24,2.85-1.86,10.72-.39,21.59-1.62,32.33-.46,3.94-.77,7.88-2.37,11.56-2.64,6.05-6,7.66-12.39,6a22.76,22.76,0,0,1-9-5c-14.17-12.05-27-25.35-37.42-40.84-.74-1.11-1.29-3.28-2.93-2.57-1.38.6-.18,2.45.09,3.63,5.43,24,10.34,48.08,11.64,72.74.82,15.52,1.31,31-.79,46.5a15.19,15.19,0,0,1-1.31,4.72c-4.56,9-8.22,11.87-17.52,6.75-6.4-3.52-11.39-8.53-15.92-14.1-17.07-21-32.09-43.43-47.19-65.82-20.06-29.75-41.1-58.81-61.74-88.15-.8-1.14-2.79-2.47-.94-3.89s2.53,1.09,3.34,2c25,28.45,46.88,59.31,69.58,89.53,16.22,21.59,31.5,43.89,48.67,64.77,2.89,3.52,5.88,6.86,10.27,8.66,2.07.85,3,.4,3.9-1.67C219.6,409.28,218.48,400.91,218.89,389.45ZM473.78,309.6a44.32,44.32,0,0,0,14.86-1.87c12.45-4,23.33-10.15,27.69-23.53,3.67-11.24-1.81-20.79-13.17-23.88-7.37-2-14.73-1.37-22,.39-19.75,4.78-38.33,12.92-57.22,20.15-6.45,2.47-6.41,2.45-1.1,7.11C437.43,300.8,453.68,309.73,473.78,309.6Z",
                                         transform: "translate(-79.81 -114.7)"
                                     }, void 0, false, {
                                         fileName: "Components/Signature.js",
-                                        lineNumber: 18,
+                                        lineNumber: 31,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                        class: "cls-1",
+                                        className: "cls-1",
                                         d: "M428.33,419.58c.06-19.32-7-36.3-17.22-52.25-.94-1.46-1.85-2.94-2.86-4.35s-1.91-3.29-.3-4.34,2.1,1.31,2.88,2.22c14.78,17.29,21.71,37.7,23.61,60.07,2.18,25.75-16.88,48.69-42.82,51.82-21.09,2.54-39.9-2.86-56.77-15.57-6.45-4.85-11.21-11.11-15.28-17.94-1-1.62-2-3.88.1-5.12s3.88.36,5,2.23c11.73,19.74,30.57,28,52,31.06,30,4.27,50.89-14.05,51.65-44.35C428.35,421.9,428.33,420.74,428.33,419.58Z",
                                         transform: "translate(-79.81 -114.7)"
                                     }, void 0, false, {
                                         fileName: "Components/Signature.js",
-                                        lineNumber: 21,
+                                        lineNumber: 34,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                        class: "cls-1",
+                                        className: "cls-1",
                                         d: "M453,192.43c-.44,1.31-.77,3-2.55,2.89a3.69,3.69,0,0,1-3.26-3.12c-.1-1.33,1.54-2.41,3.16-2.21C451.69,190.16,453.09,190.55,453,192.43Z",
                                         transform: "translate(-79.81 -114.7)"
                                     }, void 0, false, {
                                         fileName: "Components/Signature.js",
-                                        lineNumber: 24,
+                                        lineNumber: 37,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                        class: "cls-1",
+                                        className: "cls-1",
                                         d: "M362.1,419.82c.13-1.31.22-2.67,2-2.53,1.53.12,2.93.79,2.91,2.52s-1.42,2.14-2.8,2.35C362.33,422.45,362.37,421,362.1,419.82Z",
                                         transform: "translate(-79.81 -114.7)"
                                     }, void 0, false, {
                                         fileName: "Components/Signature.js",
-                                        lineNumber: 27,
+                                        lineNumber: 40,
                                         columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "Components/Signature.js",
-                                lineNumber: 17,
+                                lineNumber: 30,
                                 columnNumber: 8
                             }, this)
                         }, void 0, false, {
                             fileName: "Components/Signature.js",
-                            lineNumber: 16,
+                            lineNumber: 29,
                             columnNumber: 7
                         }, this)
                     ]
@@ -34496,63 +34629,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _quicklinksCss = require("../css/quicklinks.css");
-var _webDev = require("../Pages/WebDev");
-var _webDevDefault = parcelHelpers.interopDefault(_webDev);
-var _mathNPhysics = require("../Pages/MathNPhysics");
-var _mathNPhysicsDefault = parcelHelpers.interopDefault(_mathNPhysics);
-var _games = require("../Pages/Games");
-var _gamesDefault = parcelHelpers.interopDefault(_games);
-var _coursework = require("../Pages/Coursework");
-var _courseworkDefault = parcelHelpers.interopDefault(_coursework);
-function SiteMap({ selectedLink, handleLinkClick }) {
-    const links = [
-        {
-            text: "Web Dev",
-            value: "web",
-            component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _webDevDefault.default), {}, void 0, false, {
-                fileName: "Components/SiteMap.js",
-                lineNumber: 11,
-                columnNumber: 47
-            }, this)
-        },
-        {
-            text: "Math & Physics",
-            value: "mathnphy",
-            component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mathNPhysicsDefault.default), {}, void 0, false, {
-                fileName: "Components/SiteMap.js",
-                lineNumber: 12,
-                columnNumber: 59
-            }, this)
-        },
-        {
-            text: "Games",
-            value: "play",
-            component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _gamesDefault.default), {}, void 0, false, {
-                fileName: "Components/SiteMap.js",
-                lineNumber: 13,
-                columnNumber: 46
-            }, this)
-        },
-        {
-            text: "Creative Design",
-            value: "design",
-            href: "https://umerkay.github.io/DesignPortfolio.pdf"
-        },
-        {
-            text: "Coursework",
-            value: "coursework",
-            component: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _courseworkDefault.default), {}, void 0, false, {
-                fileName: "Components/SiteMap.js",
-                lineNumber: 15,
-                columnNumber: 57
-            }, this)
-        },
-        {
-            text: "Deep Learning",
-            value: "DL",
-            disabled: true
-        }
-    ];
+function SiteMap({ selectedLink, links }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34563,19 +34640,19 @@ function SiteMap({ selectedLink, handleLinkClick }) {
                     children: "Site Map"
                 }, void 0, false, {
                     fileName: "Components/SiteMap.js",
-                    lineNumber: 22,
+                    lineNumber: 9,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "Components/SiteMap.js",
-                lineNumber: 21,
+                lineNumber: 8,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "spacer"
             }, void 0, false, {
                 fileName: "Components/SiteMap.js",
-                lineNumber: 24,
+                lineNumber: 11,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34586,37 +34663,37 @@ function SiteMap({ selectedLink, handleLinkClick }) {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "links",
                             children: links.map((link, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: (selectedLink.value == link.value ? "link active " : "link ") + (link.disabled ? "disabled" : ""),
-                                    onClick: ()=>!link.disabled && handleLinkClick(link),
+                                    className: (selectedLink?.value == link.value ? "link active " : "link ") + (link.disabled ? "disabled" : ""),
+                                    onClick: ()=>!link.disabled,
                                     disabled: link.disabled,
                                     ...link.href && !link.disabled ? {
                                         href: link.href,
-                                        target: "_blank"
+                                        target: link.target || ""
                                     } : {},
                                     children: link.text
                                 }, index, false, {
                                     fileName: "Components/SiteMap.js",
-                                    lineNumber: 30,
+                                    lineNumber: 17,
                                     columnNumber: 9
                                 }, this))
                         }, void 0, false, {
                             fileName: "Components/SiteMap.js",
-                            lineNumber: 28,
+                            lineNumber: 15,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "Components/SiteMap.js",
-                        lineNumber: 27,
+                        lineNumber: 14,
                         columnNumber: 6
                     }, this)
                 }, void 0, false, {
                     fileName: "Components/SiteMap.js",
-                    lineNumber: 26,
+                    lineNumber: 13,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "Components/SiteMap.js",
-                lineNumber: 25,
+                lineNumber: 12,
                 columnNumber: 4
             }, this)
         ]
@@ -34631,7 +34708,7 @@ $RefreshReg$(_c, "SiteMap");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../css/quicklinks.css":"lfaG3","../Pages/WebDev":"kjuoh","../Pages/MathNPhysics":"cJ0Lp","../Pages/Games":"4IQDP","../Pages/Coursework":"0ktz7"}],"lfaG3":[function() {},{}],"kjuoh":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../css/quicklinks.css":"lfaG3"}],"lfaG3":[function() {},{}],"kjuoh":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b531 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34944,7 +35021,7 @@ $RefreshReg$(_c, "WebDev");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../css/drawboard.css":"ikMe3","../css/prayerjournal.css":"keAqD","../css/skills.css":"32S66","../css/watchtoday.css":"iNE9W","../img/skills.png":"3JpwW","../img/pj-ss1.jpg":"iRw59","../img/pj-ss2.jpg":"03Gll","../img/pj-logo.png":"2ujuj","../img/drawboard03.jpg":"8Ofb5","../img/drawboard02.jpg":"b7RNy","../img/watchtoday01.png":"8FG8e","../img/watchtoday02.png":"hnvWw","../Components/Display":"i2DeH"}],"ikMe3":[function() {},{}],"keAqD":[function() {},{}],"32S66":[function() {},{}],"iNE9W":[function() {},{}],"3JpwW":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../css/drawboard.css":"ikMe3","../css/prayerjournal.css":"keAqD","../css/skills.css":"32S66","../css/watchtoday.css":"iNE9W","../img/skills.png":"3JpwW","../img/pj-ss1.jpg":"iRw59","../img/pj-ss2.jpg":"03Gll","../img/pj-logo.png":"2ujuj","../img/drawboard03.jpg":"8Ofb5","../img/drawboard02.jpg":"b7RNy","../img/watchtoday01.png":"8FG8e","../img/watchtoday02.png":"hnvWw","../Components/Display":"i2DeH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ikMe3":[function() {},{}],"keAqD":[function() {},{}],"32S66":[function() {},{}],"iNE9W":[function() {},{}],"3JpwW":[function(require,module,exports) {
 module.exports = require("752068edeb5b5a23").getBundleURL("UckoE") + "skills.e6f18154.png" + "?" + Date.now();
 
 },{"752068edeb5b5a23":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -35013,7 +35090,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function Display({ title, images, links, logo, description, info, titleStyle, logoAlt, id, mirror = false, style = {} }) {
+function Display({ title, subtitle, imgHorizontal, images, links, logo, description, info, titleStyle, logoAlt, id, mirror = false, style = {} }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "display",
         id: id,
@@ -35025,14 +35102,14 @@ function Display({ title, images, links, logo, description, info, titleStyle, lo
                     order: mirror ? 2 : 0
                 },
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "imgs",
-                    children: images && images.map((image, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "imgs" + (imgHorizontal ? " horizontal" : ""),
+                    children: images && images.map((image, index)=>image.type && image.type === "render" ? image.element : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: image,
                             alt: ""
                         }, index, false, {
                             fileName: "Components/Display.js",
                             lineNumber: 8,
-                            columnNumber: 7
+                            columnNumber: 65
                         }, this))
                 }, void 0, false, {
                     fileName: "Components/Display.js",
@@ -35086,6 +35163,14 @@ function Display({ title, images, links, logo, description, info, titleStyle, lo
                                             fileName: "Components/Display.js",
                                             lineNumber: 22,
                                             columnNumber: 9
+                                        }, this),
+                                        subtitle && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                            className: "sub2",
+                                            children: subtitle
+                                        }, void 0, false, {
+                                            fileName: "Components/Display.js",
+                                            lineNumber: 23,
+                                            columnNumber: 22
                                         }, this)
                                     ]
                                 }, void 0, true, {
@@ -35098,14 +35183,14 @@ function Display({ title, images, links, logo, description, info, titleStyle, lo
                                     children: description
                                 }, void 0, false, {
                                     fileName: "Components/Display.js",
-                                    lineNumber: 24,
+                                    lineNumber: 25,
                                     columnNumber: 8
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "spacer"
                                 }, void 0, false, {
                                     fileName: "Components/Display.js",
-                                    lineNumber: 25,
+                                    lineNumber: 26,
                                     columnNumber: 8
                                 }, this),
                                 info ? Array.isArray(info) ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -35114,19 +35199,19 @@ function Display({ title, images, links, logo, description, info, titleStyle, lo
                                             children: item
                                         }, index, false, {
                                             fileName: "Components/Display.js",
-                                            lineNumber: 29,
+                                            lineNumber: 30,
                                             columnNumber: 11
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "Components/Display.js",
-                                    lineNumber: 27,
+                                    lineNumber: 28,
                                     columnNumber: 9
                                 }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                     className: "info",
                                     children: info
                                 }, void 0, false, {
                                     fileName: "Components/Display.js",
-                                    lineNumber: 33,
+                                    lineNumber: 34,
                                     columnNumber: 9
                                 }, this) : null
                             ]
@@ -35283,7 +35368,7 @@ $RefreshReg$(_c, "MathNPhysics");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Components/Display":"i2DeH","../img/evo1.png":"786lk","../img/evo2.png":"fk12X","../css/nf.css":"f8y7Y","../css/optics.css":"kyBUt","../css/evolution.css":"6E5x1"}],"786lk":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Components/Display":"i2DeH","../img/evo1.png":"786lk","../img/evo2.png":"fk12X","../css/nf.css":"f8y7Y","../css/optics.css":"kyBUt","../css/evolution.css":"6E5x1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"786lk":[function(require,module,exports) {
 module.exports = require("b56b94fe55e781a2").getBundleURL("UckoE") + "evo1.bd948953.png" + "?" + Date.now();
 
 },{"b56b94fe55e781a2":"lgJ39"}],"fk12X":[function(require,module,exports) {
@@ -35304,6 +35389,11 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _sideScroller = require("../Components/SideScroller");
 var _sideScrollerDefault = parcelHelpers.interopDefault(_sideScroller);
+var _display = require("../Components/Display");
+var _displayDefault = parcelHelpers.interopDefault(_display);
+var _needlessCss = require("../css/needless.css");
+var _needlesslogoJpg = require("../img/needlesslogo.jpg");
+var _needlesslogoJpgDefault = parcelHelpers.interopDefault(_needlesslogoJpg);
 function Games() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -35312,12 +35402,35 @@ function Games() {
                 children: " Games!"
             }, void 0, false, {
                 fileName: "Pages/Games.js",
-                lineNumber: 7,
+                lineNumber: 10,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sideScrollerDefault.default), {}, void 0, false, {
                 fileName: "Pages/Games.js",
-                lineNumber: 9,
+                lineNumber: 12,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _displayDefault.default), {
+                title: "needlessjs",
+                links: [
+                    {
+                        href: "https://github.com/umerkay/needless-library",
+                        text: "Code"
+                    },
+                    {
+                        href: "https://umerkay.github.io/needlessjs/",
+                        text: "Website"
+                    }
+                ],
+                images: [
+                    (0, _needlesslogoJpgDefault.default)
+                ],
+                description: "Graphic & Sketch Library",
+                info: "These games are made with love on Needlessjs, or some development version of it. Needlessjs is a library I have developed myself to do away with the redundant and cumbersome nature of the Canvas API in JavaScript. It is inspired by p5.js and the Processing Foundation's work, but allows sketches to be much more modular.",
+                id: "needless"
+            }, void 0, false, {
+                fileName: "Pages/Games.js",
+                lineNumber: 13,
                 columnNumber: 13
             }, this)
         ]
@@ -35332,7 +35445,7 @@ $RefreshReg$(_c, "Games");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Components/SideScroller":"dhEFT"}],"dhEFT":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Components/SideScroller":"dhEFT","../Components/Display":"i2DeH","../css/needless.css":"9MVev","../img/needlesslogo.jpg":"iDMWM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dhEFT":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0749 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35542,7 +35655,7 @@ $RefreshReg$(_c, "SideScroller");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../firebase":"dBiHI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","firebase/firestore":"8A4BC","../css/sidescroller.css":"5l9KJ"}],"dBiHI":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../firebase":"dBiHI","../css/sidescroller.css":"5l9KJ","firebase/firestore":"8A4BC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dBiHI":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _app = require("firebase/app");
@@ -63268,7 +63381,10 @@ var createWebChannelTransport;
     XhrIo = webchannel_blob_es2018.XhrIo = X;
 }).apply(typeof commonjsGlobal !== "undefined" ? commonjsGlobal : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {});
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5l9KJ":[function() {},{}],"0ktz7":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5l9KJ":[function() {},{}],"9MVev":[function() {},{}],"iDMWM":[function(require,module,exports) {
+module.exports = require("d4b21db41d251c61").getBundleURL("UckoE") + "needlesslogo.21fe1939.jpg" + "?" + Date.now();
+
+},{"d4b21db41d251c61":"lgJ39"}],"0ktz7":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9519 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -63286,6 +63402,21 @@ var _displayDefault = parcelHelpers.interopDefault(_display);
 var _courseworkCss = require("../css/coursework.css");
 var _coalJpg = require("../img/coal.jpg");
 var _coalJpgDefault = parcelHelpers.interopDefault(_coalJpg);
+var _aEyeCss = require("../css/aEye.css");
+var _landuseCss = require("../css/landuse.css");
+var _fssCss = require("../css/fss.css");
+var _aeye1Png = require("../img/aeye1.png");
+var _aeye1PngDefault = parcelHelpers.interopDefault(_aeye1Png);
+var _aeye2Jpg = require("../img/aeye2.jpg");
+var _aeye2JpgDefault = parcelHelpers.interopDefault(_aeye2Jpg);
+var _landuse1Png = require("../img/landuse1.png");
+var _landuse1PngDefault = parcelHelpers.interopDefault(_landuse1Png);
+var _fss1Png = require("../img/fss1.png");
+var _fss1PngDefault = parcelHelpers.interopDefault(_fss1Png);
+var _fss2Png = require("../img/fss2.png");
+var _fss2PngDefault = parcelHelpers.interopDefault(_fss2Png);
+var _fssTable = require("../Components/FssTable");
+var _fssTableDefault = parcelHelpers.interopDefault(_fssTable);
 function Coursework() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -63296,7 +63427,7 @@ function Coursework() {
                 children: "Coursework for"
             }, void 0, false, {
                 fileName: "Pages/Coursework.js",
-                lineNumber: 8,
+                lineNumber: 17,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -63308,7 +63439,7 @@ function Coursework() {
                 children: " Bachelors of Science in Computer Science"
             }, void 0, false, {
                 fileName: "Pages/Coursework.js",
-                lineNumber: 9,
+                lineNumber: 18,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -63322,19 +63453,19 @@ function Coursework() {
                     children: "National University of Sciences and Technology, Islamabad, Pakistan"
                 }, void 0, false, {
                     fileName: "Pages/Coursework.js",
-                    lineNumber: 10,
+                    lineNumber: 19,
                     columnNumber: 58
                 }, this)
             }, void 0, false, {
                 fileName: "Pages/Coursework.js",
-                lineNumber: 10,
+                lineNumber: 19,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "spacer"
             }, void 0, false, {
                 fileName: "Pages/Coursework.js",
-                lineNumber: 11,
+                lineNumber: 20,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _displayDefault.default), {
@@ -63381,14 +63512,132 @@ function Coursework() {
                 }
             }, void 0, false, {
                 fileName: "Pages/Coursework.js",
-                lineNumber: 12,
+                lineNumber: 21,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _displayDefault.default), {
+                title: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        "a",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            style: {
+                                fontWeight: "bolder",
+                                color: "rgba(10, 0, 192, 0.801)"
+                            },
+                            children: "EYE"
+                        }, void 0, false, void 0, void 0)
+                    ]
+                }, void 0, true),
+                links: [
+                    {
+                        href: "https://github.com/umerkay/aEYE",
+                        text: "Code",
+                        style: {
+                            backgroundColor: "rgb(113, 6, 236)",
+                            color: "white"
+                        }
+                    },
+                    {
+                        href: "https://github.com/umerkay/aEYE/blob/main/DL%20Proj%20Report.pdf",
+                        text: "Report",
+                        style: {
+                            backgroundColor: "rgb(113, 6, 236)",
+                            color: "white"
+                        }
+                    }
+                ],
+                images: [
+                    (0, _aeye1PngDefault.default),
+                    (0, _aeye2JpgDefault.default)
+                ],
+                description: "aEYE is a Visual Question Answering (VQA) system designed to empower visually impaired individuals by providing access to visual content through natural language questions.",
+                info: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, void 0, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                            children: "⭕ Our solution involves fine-tuning a pretrained version of Microsoft’s GenerativeImage2Text (GIT) model on the COCOQA dataset."
+                        }, void 0, false, void 0, void 0)
+                    ]
+                }, void 0, true, void 0, void 0),
+                titleStyle: {
+                    color: "rgb(27, 27, 27)"
+                },
+                logoAlt: "aEYE",
+                id: "aEye",
+                mirror: true,
+                imgHorizontal: true,
+                style: {
+                    alignItems: "center",
+                    background: "white",
+                    color: "rgb(27, 27, 27)"
+                }
+            }, void 0, false, {
+                fileName: "Pages/Coursework.js",
+                lineNumber: 36,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _displayDefault.default), {
+                title: "Improving Alzeimer's Diagnosis",
+                links: [
+                    {
+                        href: "https://github.com/umerkay/FeatureSubsetSelection",
+                        text: "Code",
+                        style: {
+                            backgroundColor: "rgb(0, 0, 0)",
+                            color: "white"
+                        }
+                    },
+                    {
+                        href: "https://github.com/umerkay/FeatureSubsetSelection/blob/main/AI%20GA%20and%20PSO.pdf",
+                        text: "Report",
+                        style: {
+                            backgroundColor: "rgb(0, 0, 0)",
+                            color: "white"
+                        }
+                    }
+                ],
+                images: [
+                    (0, _fss1PngDefault.default)
+                ],
+                description: "with Feature Subset Selection using Genetic Algorithm (GA) and Particle Swarm Optimization (PSO), and Non-dominated Sorting Genetic Algorithm II (NSGA-II) for multi-objective optimization.",
+                info: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, void 0, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                    children: [
+                                        "⭕ Accuracy improves when redundant features are removed, but reaches plateau",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, void 0, void 0),
+                                        "⭕ NSGA-II used to show tradeoff between accuracy and no. of features in subset"
+                                    ]
+                                }, void 0, true, void 0, void 0)
+                            ]
+                        }, void 0, true, void 0, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fssTableDefault.default), {}, void 0, false, void 0, void 0)
+                    ]
+                }, void 0, true),
+                titleStyle: {
+                    color: "rgb(27, 27, 27)"
+                },
+                logoAlt: "Feature Subset Selection",
+                id: "fss",
+                mirror: true,
+                style: {
+                    alignItems: "center",
+                    background: "white",
+                    color: "rgb(27, 27, 27)"
+                }
+            }, void 0, false, {
+                fileName: "Pages/Coursework.js",
+                lineNumber: 52,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "spacer"
             }, void 0, false, {
                 fileName: "Pages/Coursework.js",
-                lineNumber: 26,
+                lineNumber: 71,
                 columnNumber: 9
             }, this)
         ]
@@ -63403,10 +63652,419 @@ $RefreshReg$(_c, "Coursework");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Components/Display":"i2DeH","../css/coursework.css":"cx2Bk","../img/coal.jpg":"caswE"}],"cx2Bk":[function() {},{}],"caswE":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Components/Display":"i2DeH","../css/coursework.css":"cx2Bk","../img/coal.jpg":"caswE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../css/aEye.css":"aL8k4","../css/landuse.css":"2IEcT","../css/fss.css":"iL8gg","../img/aeye1.png":"dvjDU","../img/aeye2.jpg":"i6m7w","../img/landuse1.png":"iCNBE","../img/fss1.png":"1RAbS","../img/fss2.png":"hpkZf","../Components/FssTable":"1k7KY"}],"cx2Bk":[function() {},{}],"caswE":[function(require,module,exports) {
 module.exports = require("cddc86e86e97b7e3").getBundleURL("UckoE") + "coal.3c8991f2.jpg" + "?" + Date.now();
 
-},{"cddc86e86e97b7e3":"lgJ39"}],"fvj34":[function() {},{}],"do5GF":[function(require,module,exports) {
+},{"cddc86e86e97b7e3":"lgJ39"}],"aL8k4":[function() {},{}],"2IEcT":[function() {},{}],"iL8gg":[function() {},{}],"dvjDU":[function(require,module,exports) {
+module.exports = require("8283f8aa41fbb40f").getBundleURL("UckoE") + "aeye1.8966a30e.png" + "?" + Date.now();
+
+},{"8283f8aa41fbb40f":"lgJ39"}],"i6m7w":[function(require,module,exports) {
+module.exports = require("b0ce1dbcad496d0d").getBundleURL("UckoE") + "aeye2.7c188499.jpg" + "?" + Date.now();
+
+},{"b0ce1dbcad496d0d":"lgJ39"}],"iCNBE":[function(require,module,exports) {
+module.exports = require("edcdf2d71e439920").getBundleURL("UckoE") + "landuse1.2f023c64.png" + "?" + Date.now();
+
+},{"edcdf2d71e439920":"lgJ39"}],"1RAbS":[function(require,module,exports) {
+module.exports = require("cbaa7568072018a5").getBundleURL("UckoE") + "fss1.46bdd07b.png" + "?" + Date.now();
+
+},{"cbaa7568072018a5":"lgJ39"}],"hpkZf":[function(require,module,exports) {
+module.exports = require("3c8eddda3e58b693").getBundleURL("UckoE") + "fss2.b4017cc2.png" + "?" + Date.now();
+
+},{"3c8eddda3e58b693":"lgJ39"}],"1k7KY":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$be4f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$be4f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const tableData = [
+    {
+        method: "Baseline",
+        accuracy: 0.9302,
+        featuresSelected: 34,
+        computationTime: "N/A"
+    },
+    {
+        method: "GA",
+        accuracy: 0.9395,
+        featuresSelected: 18,
+        computationTime: "296.54 seconds"
+    },
+    {
+        method: "PSO",
+        accuracy: 0.9411,
+        featuresSelected: 21,
+        computationTime: "413.94 seconds"
+    },
+    {
+        method: "Modified PSO",
+        accuracy: 0.9426,
+        featuresSelected: 30,
+        computationTime: "250.40 seconds"
+    }
+];
+function FSSTable() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+        border: 1,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Method"
+                        }, void 0, false, {
+                            fileName: "Components/FssTable.js",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Accuracy"
+                        }, void 0, false, {
+                            fileName: "Components/FssTable.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Features Selected"
+                        }, void 0, false, {
+                            fileName: "Components/FssTable.js",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Computation Time"
+                        }, void 0, false, {
+                            fileName: "Components/FssTable.js",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "Components/FssTable.js",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "Components/FssTable.js",
+                lineNumber: 13,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                children: tableData.map((row, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                children: row.method
+                            }, void 0, false, {
+                                fileName: "Components/FssTable.js",
+                                lineNumber: 24,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                children: row.accuracy
+                            }, void 0, false, {
+                                fileName: "Components/FssTable.js",
+                                lineNumber: 25,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                children: row.featuresSelected
+                            }, void 0, false, {
+                                fileName: "Components/FssTable.js",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                children: row.computationTime
+                            }, void 0, false, {
+                                fileName: "Components/FssTable.js",
+                                lineNumber: 27,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, index, true, {
+                        fileName: "Components/FssTable.js",
+                        lineNumber: 23,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "Components/FssTable.js",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "Components/FssTable.js",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+}
+_c = FSSTable;
+exports.default = FSSTable;
+var _c;
+$RefreshReg$(_c, "FSSTable");
+
+  $parcel$ReactRefreshHelpers$be4f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hBbaz":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$051d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$051d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>DeepLearning);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _display = require("../Components/Display");
+var _displayDefault = parcelHelpers.interopDefault(_display);
+var _aEyeCss = require("../css/aEye.css");
+var _landuseCss = require("../css/landuse.css");
+var _fssCss = require("../css/fss.css");
+var _aeye1Png = require("../img/aeye1.png");
+var _aeye1PngDefault = parcelHelpers.interopDefault(_aeye1Png);
+var _aeye2Jpg = require("../img/aeye2.jpg");
+var _aeye2JpgDefault = parcelHelpers.interopDefault(_aeye2Jpg);
+var _landuse1Png = require("../img/landuse1.png");
+var _landuse1PngDefault = parcelHelpers.interopDefault(_landuse1Png);
+var _fss1Png = require("../img/fss1.png");
+var _fss1PngDefault = parcelHelpers.interopDefault(_fss1Png);
+var _fss2Png = require("../img/fss2.png");
+var _fss2PngDefault = parcelHelpers.interopDefault(_fss2Png);
+var _fssTable = require("../Components/FssTable");
+var _fssTableDefault = parcelHelpers.interopDefault(_fssTable);
+function DeepLearning() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                id: "DL",
+                class: "title",
+                children: " Deep Learning & ML Projects"
+            }, void 0, false, {
+                fileName: "Pages/DeepLearning.js",
+                lineNumber: 16,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                style: {
+                    color: "#eee",
+                    fontStyle: "italic"
+                },
+                children: "Demos not available due to resource constraints."
+            }, void 0, false, {
+                fileName: "Pages/DeepLearning.js",
+                lineNumber: 17,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "spacer"
+            }, void 0, false, {
+                fileName: "Pages/DeepLearning.js",
+                lineNumber: 18,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "spacer"
+            }, void 0, false, {
+                fileName: "Pages/DeepLearning.js",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _displayDefault.default), {
+                title: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        "a",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            style: {
+                                fontWeight: "bolder",
+                                color: "rgba(10, 0, 192, 0.801)"
+                            },
+                            children: "EYE"
+                        }, void 0, false, void 0, void 0)
+                    ]
+                }, void 0, true),
+                links: [
+                    {
+                        href: "https://github.com/umerkay/aEYE",
+                        text: "Code",
+                        style: {
+                            backgroundColor: "rgb(113, 6, 236)",
+                            color: "white"
+                        }
+                    },
+                    {
+                        href: "https://github.com/umerkay/aEYE/blob/main/DL%20Proj%20Report.pdf",
+                        text: "Report",
+                        style: {
+                            backgroundColor: "rgb(113, 6, 236)",
+                            color: "white"
+                        }
+                    }
+                ],
+                images: [
+                    (0, _aeye1PngDefault.default),
+                    (0, _aeye2JpgDefault.default)
+                ],
+                description: "aEYE is a Visual Question Answering (VQA) system designed to empower visually impaired individuals by providing access to visual content through natural language questions.",
+                info: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, void 0, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                            children: "⭕ Our solution involves fine-tuning a pretrained version of Microsoft’s GenerativeImage2Text (GIT) model on the COCOQA dataset."
+                        }, void 0, false, void 0, void 0)
+                    ]
+                }, void 0, true, void 0, void 0),
+                titleStyle: {
+                    color: "rgb(27, 27, 27)"
+                },
+                logoAlt: "aEYE",
+                id: "aEye",
+                mirror: true,
+                imgHorizontal: true,
+                style: {
+                    alignItems: "center",
+                    background: "white",
+                    color: "rgb(27, 27, 27)"
+                }
+            }, void 0, false, {
+                fileName: "Pages/DeepLearning.js",
+                lineNumber: 20,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _displayDefault.default), {
+                title: "Land Use Segmentation",
+                subtitle: "with UNet++ on DeepGlobe",
+                links: [
+                    {
+                        href: "https://github.com/umerkay/aEYE",
+                        text: "Github",
+                        style: {
+                            backgroundColor: "rgb(113, 6, 236)",
+                            color: "white"
+                        }
+                    },
+                    {
+                        href: "https://github.com/umerkay/satellite-imaging-segmentation/blob/main/Satellite%20Image%20Segmentation.ipynb",
+                        text: "Notebook",
+                        style: {
+                            backgroundColor: "rgb(113, 6, 236)",
+                            color: "white"
+                        }
+                    }
+                ],
+                images: [
+                    (0, _landuse1PngDefault.default)
+                ],
+                description: "Dataset part of the DeepGlobe Challenge. A UNet++ architecture is used to predict segmentation maps of satellite imagery. The masks classify between 7 different classes for land use: urban, agriculture, rangeland, forest, water, barren, and unknown.",
+                info: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, void 0, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                            children: "⭕ Satellite data exhibits class imbalance. This is tackled by calculating and using class weights in the loss calculation."
+                        }, void 0, false, void 0, void 0)
+                    ]
+                }, void 0, true, void 0, void 0),
+                titleStyle: {
+                    fontSize: "2.5em"
+                },
+                logoAlt: "Land Use Segmentation",
+                id: "landuse",
+                imgHorizontal: true,
+                style: {
+                    alignItems: "center"
+                }
+            }, void 0, false, {
+                fileName: "Pages/DeepLearning.js",
+                lineNumber: 36,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _displayDefault.default), {
+                title: "Improving Alzeimer's Diagnosis",
+                links: [
+                    {
+                        href: "https://github.com/umerkay/FeatureSubsetSelection",
+                        text: "Code",
+                        style: {
+                            backgroundColor: "rgb(0, 0, 0)",
+                            color: "white"
+                        }
+                    },
+                    {
+                        href: "https://github.com/umerkay/FeatureSubsetSelection/blob/main/AI%20GA%20and%20PSO.pdf",
+                        text: "Report",
+                        style: {
+                            backgroundColor: "rgb(0, 0, 0)",
+                            color: "white"
+                        }
+                    }
+                ],
+                images: [
+                    (0, _fss1PngDefault.default)
+                ],
+                description: "with Feature Subset Selection using Genetic Algorithm (GA) and Particle Swarm Optimization (PSO), and Non-dominated Sorting Genetic Algorithm II (NSGA-II) for multi-objective optimization.",
+                info: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, void 0, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                    children: [
+                                        "⭕ Accuracy improves when redundant features are removed, but reaches plateau",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, void 0, void 0),
+                                        "⭕ NSGA-II used to show tradeoff between accuracy and no. of features in subset"
+                                    ]
+                                }, void 0, true, void 0, void 0)
+                            ]
+                        }, void 0, true, void 0, void 0),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fssTableDefault.default), {}, void 0, false, void 0, void 0)
+                    ]
+                }, void 0, true),
+                titleStyle: {
+                    color: "rgb(27, 27, 27)"
+                },
+                logoAlt: "Feature Subset Selection",
+                id: "fss",
+                mirror: true,
+                style: {
+                    alignItems: "center",
+                    background: "white",
+                    color: "rgb(27, 27, 27)"
+                }
+            }, void 0, false, {
+                fileName: "Pages/DeepLearning.js",
+                lineNumber: 52,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "spacer"
+            }, void 0, false, {
+                fileName: "Pages/DeepLearning.js",
+                lineNumber: 71,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = DeepLearning;
+var _c;
+$RefreshReg$(_c, "DeepLearning");
+
+  $parcel$ReactRefreshHelpers$051d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Components/Display":"i2DeH","../css/aEye.css":"aL8k4","../css/landuse.css":"2IEcT","../img/aeye1.png":"dvjDU","../img/aeye2.jpg":"i6m7w","../img/landuse1.png":"iCNBE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../css/fss.css":"iL8gg","../Components/FssTable":"1k7KY","../img/fss2.png":"hpkZf","../img/fss1.png":"1RAbS"}],"aL8k4":[function() {},{}],"2IEcT":[function() {},{}],"iL8gg":[function() {},{}],"fvj34":[function() {},{}],"do5GF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$77de = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -63424,8 +64082,12 @@ function Footer() {
         class: "main",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             class: "container",
-            children: "\xa9️ umerkk164 2024 All content here in is property of the entity represented by umerkk164. This website is for demonstration of work done by said entity and shall be used as such. Work is linked to third parties for the purposes of demonstration and said entity will not be responsible for inability to access external links at any point in time. If any need hereto arises to communicate, please email umerkk164@gmail.com."
-        }, void 0, false, {
+            children: [
+                "\xa9️ umerkk164 ",
+                new Date().getFullYear(),
+                " All content here in is property of the entity represented by umerkk164. This website is for demonstration of work done by said entity and shall be used as such. Work is linked to third parties for the purposes of demonstration and said entity will not be responsible for inability to access external links at any point in time. If any need hereto arises to communicate, please email umerkk164@gmail.com."
+            ]
+        }, void 0, true, {
             fileName: "Components/Footer.js",
             lineNumber: 6,
             columnNumber: 13
@@ -63445,6 +64107,282 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6bHCS":[function() {},{}],"4Fr6P":[function() {},{}],"jikrs":[function() {},{}]},["2UeK4","1xC6H","bB7Pu"], "bB7Pu", "parcelRequireeb33")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6bHCS":[function() {},{}],"4Fr6P":[function() {},{}],"jikrs":[function() {},{}],"dlHWA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$945d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$945d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _aboutScss = require("../css/about.scss");
+var _aboutSection = require("../Components/AboutSection");
+var _aboutSectionDefault = parcelHelpers.interopDefault(_aboutSection);
+var _umerkayexplainsPng = require("../img/umerkayexplains.png");
+var _umerkayexplainsPngDefault = parcelHelpers.interopDefault(_umerkayexplainsPng);
+var _dlPng = require("../img/DL.png");
+var _dlPngDefault = parcelHelpers.interopDefault(_dlPng);
+var _designPng = require("../img/design.png");
+var _designPngDefault = parcelHelpers.interopDefault(_designPng);
+var _skillsPng = require("../img/skills.png");
+var _skillsPngDefault = parcelHelpers.interopDefault(_skillsPng);
+var _tumlogoPng = require("../img/tumlogo.png");
+var _tumlogoPngDefault = parcelHelpers.interopDefault(_tumlogoPng);
+var _nustlogoPng = require("../img/nustlogo.png");
+var _nustlogoPngDefault = parcelHelpers.interopDefault(_nustlogoPng);
+var _umerkayJpg = require("../img/umerkay.jpg");
+var _umerkayJpgDefault = parcelHelpers.interopDefault(_umerkayJpg);
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container anim fadein",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "about",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "title",
+                    children: "M. Umer K."
+                }, void 0, false, {
+                    fileName: "Pages/About.js",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutSectionDefault.default), {
+                    title: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "logos",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: (0, _tumlogoPngDefault.default),
+                                        alt: "TUM",
+                                        style: {}
+                                    }, void 0, false, void 0, void 0),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: (0, _nustlogoPngDefault.default),
+                                        alt: "NUST",
+                                        style: {}
+                                    }, void 0, false, void 0, void 0)
+                                ]
+                            }, void 0, true, void 0, void 0),
+                            "Visitng Researcher, Technical University of Munich",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, void 0, void 0),
+                            "Research Intern, MachVis Lab, Islamabad"
+                        ]
+                    }, void 0, true),
+                    desc: "Currently doing academic research in Computer Vision. Specifically, I am working on using domain adaptation & few-shot learning methods to train useful deep learning models on satellite imagery data. I am working on a DAAD-funded project with AI4EO at TUM and NARC in Islamabad.",
+                    img: (0, _umerkayJpgDefault.default),
+                    dir: "left",
+                    large: true
+                }, void 0, false, {
+                    fileName: "Pages/About.js",
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutSectionDefault.default), {
+                    title: "Umerkay Explains",
+                    desc: "I am making videos explaining deep learning and AI concepts over on youtube. 3blue1brown, Computerphile, Tom Scott and Yannic Kilcher are some of my inspirations. Work in Progress \uD83D\uDEA7\uD83D\uDC77",
+                    img: (0, _umerkayexplainsPngDefault.default),
+                    dir: "right"
+                }, void 0, false, {
+                    fileName: "Pages/About.js",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutSectionDefault.default), {
+                    title: "Deep Learning - CV & NLP",
+                    desc: "I am working on self-interest projects in DeepLearning and Computer Vision. Projects include Humaizing AI Text, Visual Question Answering Chatbot, Pose Detection, Object Detection, Land Use Segmentation, Virtual Try-On, and more.",
+                    img: (0, _dlPngDefault.default),
+                    large: true,
+                    button: {
+                        text: "Projects",
+                        link: "/#DL"
+                    }
+                }, void 0, false, {
+                    fileName: "Pages/About.js",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutSectionDefault.default), {
+                    title: "Full-Stack Web Developer",
+                    desc: "A keen JavaScript nerd, trying to convince every person I meet to learn this language and accompany me on this journey to adorn the web. I have experience both with back-end and front-end development, and front-end interface and experience design.",
+                    img: (0, _designPngDefault.default),
+                    button: {
+                        text: "Projects",
+                        link: "/#web"
+                    }
+                }, void 0, false, {
+                    fileName: "Pages/About.js",
+                    lineNumber: 49,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutSectionDefault.default), {
+                    title: "UI & Graphic Designer",
+                    desc: "Experienced with design tools like Photoshop and Illustrator, including designing infographics, posters, and items for the purposes of print. Have worked with various events to produce artwork and graphics.",
+                    img: (0, _skillsPngDefault.default),
+                    dir: "right",
+                    large: true,
+                    button: {
+                        text: "Portfolio",
+                        link: "/DesignPortfolio.pdf"
+                    }
+                }, void 0, false, {
+                    fileName: "Pages/About.js",
+                    lineNumber: 56,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "Pages/About.js",
+            lineNumber: 15,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "Pages/About.js",
+        lineNumber: 14,
+        columnNumber: 5
+    }, undefined);
+};
+_c = About;
+exports.default = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$945d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Components/AboutSection":"5iraB","../img/umerkayexplains.png":"9ZHfc","../img/DL.png":"8Pzos","../img/design.png":"lhUyF","../img/skills.png":"3JpwW","../css/about.scss":"fmKce","../img/tumlogo.png":"hFhff","../img/nustlogo.png":"bA1Jp","../img/umerkay.jpg":"60t2y"}],"5iraB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8f08 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8f08.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>AboutSection);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function AboutSection({ large, logos, title, desc, img, dir = "left", button }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "aboutsection",
+        style: {
+            marginBottom: large ? "10rem" : "3rem"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "text " + dir,
+                children: [
+                    logos ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "logos",
+                        children: logos.map((logo, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: logo,
+                                alt: ""
+                            }, index, false, {
+                                fileName: "Components/AboutSection.js",
+                                lineNumber: 9,
+                                columnNumber: 25
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "Components/AboutSection.js",
+                        lineNumber: 7,
+                        columnNumber: 27
+                    }, this) : null,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-child",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "title",
+                                children: title
+                            }, void 0, false, {
+                                fileName: "Components/AboutSection.js",
+                                lineNumber: 13,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                className: "desc",
+                                children: desc
+                            }, void 0, false, {
+                                fileName: "Components/AboutSection.js",
+                                lineNumber: 14,
+                                columnNumber: 21
+                            }, this),
+                            button ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: button.link,
+                                className: "btn",
+                                children: button.text
+                            }, void 0, false, {
+                                fileName: "Components/AboutSection.js",
+                                lineNumber: 15,
+                                columnNumber: 31
+                            }, this) : null
+                        ]
+                    }, void 0, true, {
+                        fileName: "Components/AboutSection.js",
+                        lineNumber: 12,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "Components/AboutSection.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: dir == "left" ? "img right" : "img left",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: img,
+                    alt: ""
+                }, void 0, false, {
+                    fileName: "Components/AboutSection.js",
+                    lineNumber: 19,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
+                fileName: "Components/AboutSection.js",
+                lineNumber: 18,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "Components/AboutSection.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, this);
+}
+_c = AboutSection;
+var _c;
+$RefreshReg$(_c, "AboutSection");
+
+  $parcel$ReactRefreshHelpers$8f08.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9ZHfc":[function(require,module,exports) {
+module.exports = require("d5b565dc8d75d70f").getBundleURL("UckoE") + "umerkayexplains.0de6dae1.png" + "?" + Date.now();
+
+},{"d5b565dc8d75d70f":"lgJ39"}],"8Pzos":[function(require,module,exports) {
+module.exports = require("299baaca48639e83").getBundleURL("UckoE") + "DL.3c7a4078.png" + "?" + Date.now();
+
+},{"299baaca48639e83":"lgJ39"}],"lhUyF":[function(require,module,exports) {
+module.exports = require("7c93c85fa6fbe172").getBundleURL("UckoE") + "design.9ce66a91.png" + "?" + Date.now();
+
+},{"7c93c85fa6fbe172":"lgJ39"}],"fmKce":[function() {},{}],"hFhff":[function(require,module,exports) {
+module.exports = require("da1703bddb35c8d1").getBundleURL("UckoE") + "tumlogo.9a704785.png" + "?" + Date.now();
+
+},{"da1703bddb35c8d1":"lgJ39"}],"bA1Jp":[function(require,module,exports) {
+module.exports = require("cd1e86dc9cec110e").getBundleURL("UckoE") + "nustlogo.4126b0c2.png" + "?" + Date.now();
+
+},{"cd1e86dc9cec110e":"lgJ39"}],"60t2y":[function(require,module,exports) {
+module.exports = require("787f1e3a56c45075").getBundleURL("UckoE") + "umerkay.6b9da419.jpg" + "?" + Date.now();
+
+},{"787f1e3a56c45075":"lgJ39"}]},["2UeK4","1xC6H","bB7Pu"], "bB7Pu", "parcelRequireeb33")
 
 //# sourceMappingURL=index.3d214d75.js.map

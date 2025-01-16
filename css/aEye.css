@@ -1,0 +1,57 @@
+#aEye {
+    padding: 4rem 2rem;
+    gap: 1rem;
+}
+
+#aEye .brand {
+    display: flex;
+    align-items: center;
+    min-width: 50%;
+}
+
+#aEye .imgs {
+    margin-right: 2rem;
+}
+
+#aEye .imgs img {
+    width: 50%;
+    border-radius: 1rem;
+}
+
+#aEye .imgs.horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+#aEye .sub {
+    font-size: 0.75rem;
+    color: black;
+    font-weight: bold;
+}
+
+#aEye .spacer {
+    height: 0px;
+}
+
+#aEye .btn {
+    background-color: rgb(113, 6, 236);
+    color: white;
+}
+
+/* #aEye img { */
+    /* width: 400px; */
+/* } */
+
+#aEye .title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#aEye .sub {
+    margin-bottom: 0.5rem;
+}
+
+#aEye .info {
+    font-size: 0.75rem;
+}

@@ -3,6 +3,11 @@
     stroke: white;
 }
 
+/* .cls-1 {
+    fill: url(#gradient1);
+} */
+
+
 path {
     animation: draw2 6s ease 0ms, fill 1s ease-out 1s;
     animation-fill-mode: forwards;
