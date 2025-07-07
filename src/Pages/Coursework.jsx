@@ -10,7 +10,7 @@ import img2 from "../img/aeye2.jpg";
 import img3 from "../img/landuse1.png";
 import img4 from "../img/fss1.png";
 import img5 from "../img/fss2.png";
-import FSSTable from '../Components/FssTable';
+import FSSTable from '../Components/FSSTable';
 
 export default function Coursework() {
     return (<>
