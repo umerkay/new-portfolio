@@ -24,12 +24,10 @@ jobs:
       - name: Build
         run: yarn run build
 
-      - name: Deploy to docs/
+      - name: Commit built site
         run: |
-          rm -rf docs
-          cp -r dist docs
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add docs
-          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
+          git commit -m "Build site" || echo "No changes to commit"
           git push origin main
