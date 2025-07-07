@@ -1,0 +1,47 @@
+.cls-1 {
+    fill: transparent;
+    stroke: white;
+}
+
+/* .cls-1 {
+    fill: url(#gradient1);
+} */
+
+
+path {
+    animation: draw2 6s ease 0ms, fill 1s ease-out 1s;
+    animation-fill-mode: forwards;
+    stroke-dasharray: 50px;
+    opacity: 0;
+}
+
+path:nth-child(1) {
+    animation: draw 6s ease, fill 1000ms ease-out 1000ms;
+    animation-fill-mode: forwards;
+    stroke-dasharray: 400px;
+    opacity: 1;
+}
+
+@keyframes fill {
+    to {
+        fill: #10adf3; /* Use the gradient defined in the SVG */
+    }
+}
+
+@keyframes draw {
+    to {
+        stroke-width: 1px;
+        opacity: 1;
+        stroke-dasharray: 3000px;
+        stroke: #10adf3;
+    }
+}
+
+@keyframes draw2 {
+    to {
+        stroke-width: 1px;
+        opacity: 1;
+        stroke-dasharray: 1000px;
+        stroke: #10adf3;
+    }
+}

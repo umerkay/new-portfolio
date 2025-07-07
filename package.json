@@ -1,9 +1,10 @@
 {
   "devDependencies": {
-    "@parcel/transformer-sass": "2.9.3",
+    "@vitejs/plugin-react": "^4.6.0",
     "buffer": "^5.5.0||^6.0.0",
-    "parcel": "^2.9.3",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "sass-embedded": "^1.89.2",
+    "vite": "^7.0.0"
   },
   "name": "new-portfolio",
   "version": "1.0.0",
@@ -58,7 +59,6 @@
     "json-parse-even-better-errors": "^2.3.1",
     "json5": "^2.2.3",
     "lightningcss": "^1.21.7",
-    "lightningcss-win32-x64-msvc": "^1.21.7",
     "lines-and-columns": "^1.2.4",
     "lmdb": "^2.7.11",
     "lru-cache": "^6.0.0",
@@ -91,10 +91,10 @@
     "safe-buffer": "^5.2.1",
     "semver": "^7.5.4",
     "source-map": "^0.6.1",
-    "srcset": "^4.0.0",
+    "srcset": "^5.0.1",
     "stable": "^0.1.8",
     "supports-color": "^7.2.0",
-    "svgo": "^2.8.0",
+    "svgo": "^3.0.2",
     "term-size": "^2.2.1",
     "timsort": "^0.3.0",
     "to-regex-range": "^5.0.1",
@@ -107,9 +107,9 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "keywords": [],

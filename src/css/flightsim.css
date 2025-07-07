@@ -1,0 +1,131 @@
+#flightsim {
+    /* background: #111; */
+    padding: 5rem 5rem;
+    justify-content: start;
+    position: relative;
+
+    background: url('../img/flybg.jpg');
+    /* background-color: rgb(34, 34, 34); */
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center; 
+    border: 5px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px #c2c2c2;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#flightsim .brand {
+    display: flex;
+    width: 60%;
+    /* height: 400px; */
+    /* align-items: center; */
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#flightsim .img {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 300px;
+    opacity: 0.9;
+    /* height: 100%; */
+}
+
+
+#flightsim .titlesmall {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); */
+    font-family: 'Courier New', Courier, monospace;
+
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+    color: white; /* or your desired inner text color */
+}
+
+#flightsim .title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: -0.5rem;
+    /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); */
+    margin-bottom: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+    /* -webkit-text-stroke: 1.5px black; */
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.2);
+    color: white; /* or your desired inner text color */
+}
+
+
+#flightsim .sub {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+#flightsim .info::before {
+    content: '*'
+}
+#flightsim .info {
+    font-size: 0.7rem;
+    width: 80%;
+    min-width: 200px;
+    font-style: italic;
+    /* position: absolute; */
+    /* bottom: 5rem; */
+    font-weight: 100;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(20, 20, 20, 0.9);
+    /* padding: 1rem; */
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    /* height: 300px; */
+    overflow-y: auto;
+    min-width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .dataC {
+    border-radius: 1rem;
+    border: 5px solid #efc323;
+    /* color: black; */
+    /* background-color: rgba(255, 255, 255, 0.212); */
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px #a58718;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .data .score {
+    display: grid;
+    grid-template-columns: 25px 125px 50px;
+  }
+  .data > :first-child {
+    /* padding-top: 1rem; */
+    color: gold;
+  }
+  .data > :nth-child(2) {
+    color: silver;
+  }
+  
+  .data > :nth-child(3) {
+    color: rgb(214, 78, 24);
+    margin-bottom: 1rem;
+  }
+
+  span.time {
+      text-align: right;
+  }

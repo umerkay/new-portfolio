@@ -1,0 +1,47 @@
+#coursework {
+    background: url('/img/needlessbg.jpg');
+    padding: 5rem 5rem;
+}
+
+#coursework .brand {
+    display: flex;
+    align-items: center;
+}
+
+#coursework .imgs img {
+    width: 400px;
+    margin-right: 2rem;
+}
+
+#coursework .sub {
+    font-size: 0.75rem;
+    color: black;
+    font-weight: bold;
+}
+
+#coursework .spacer {
+    height: 0px;
+}
+
+#coursework .btn {
+    background-color: rgb(113, 6, 236);
+    color: white;
+}
+
+/* #coursework img { */
+    /* width: 400px; */
+/* } */
+
+#coursework .title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#coursework .sub {
+    margin-bottom: 0.5rem;
+}
+
+#coursework .info {
+    font-size: 0.75rem;
+}
