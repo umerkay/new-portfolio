@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18.20.2  # or whatever version you use
+          node-version: 20.19.0  # or whatever version you use
 
       - name: Install dependencies
         run: yarn install  # or 'npm install'
