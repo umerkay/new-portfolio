@@ -11,7 +11,7 @@ import img4 from "../img/fss1.png";
 import img5 from "../img/fss2.png";
 import img6 from "../img/umerr.png";
 import img7 from "../img/poster.png";
-import FSSTable from '../Components/FssTable';
+import FSSTable from '../Components/FSSTable';
 
 export default function DeepLearning() {
     return (<>
